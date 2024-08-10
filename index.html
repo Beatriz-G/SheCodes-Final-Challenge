@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="noindex">
         <style>
-            
+
         </style>
     </head>
     <body>
@@ -59,7 +59,15 @@
             <p>Created by <a href="https://holabeatriz.com/" target="_blank">Beatriz</a> | 2024</p>
         </footer>
         <script>
+            function bake() {
+                let name = prompt("What is your name?");
+                let dessert = prompt("What's your favorite dessert?");
 
+                alert("Hey, " + name + "! We'll send you a recipe of " + dessert + " to you soon!");
+            }
+
+            let bakeButton = document.querySelector(".baking-button");
+            bakeButton.addEventListener("click", bake);
         </script>
     </body>
 </html>
